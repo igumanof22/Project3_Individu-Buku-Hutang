@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relatifDetail"
+    tools:context=".DetailActivity">
+
+    <Button
+        android:id="@+id/btnMainEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/ic_edit"
+        android:text="@string/edit_data"/>
+
+    <TextView
+        android:id="@+id/detailNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="@string/nama_pemilik_hutang"
+        android:layout_toStartOf="@id/btnMainEdit"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/detailNama"
+        android:layout_above="@id/textTotal"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_hutang"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_toStartOf="@id/textTotal"
+        android:layout_marginStart="8dp"
+        android:layout_above="@id/detailLinear"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ini_total_harga"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_above="@id/detailLinear"/>
+
+    <LinearLayout
+        android:id="@+id/detailLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detailAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/ic_add"
+            android:text="@string/hutang" />
+
+        <Button
+            android:id="@+id/detailDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_delete"
+            android:text="@string/hutang"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/detailKirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_send"
+            android:text="@string/kirim"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>

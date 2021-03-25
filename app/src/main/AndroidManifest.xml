@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project31bukubon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/buku_hutang"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/buku_hutang_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project31BukuBon">
+        <activity android:name=".SendActivity"></activity>
+        <activity
+            android:name=".UpdateDetailActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".UpdateMainActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".InsertDetailActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".InsertMainActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".DetailActivity"
+            android:configChanges="uiMode" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

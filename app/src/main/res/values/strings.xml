@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Buku Hutang</string>
+    <string name="ini_judul">Ini Judul</string>
+    <string name="ini_subjudul">Ini SubJudul</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="id">Id</string>
+    <string name="detail_hutang">Detail Hutang</string>
+    <string name="harga">Harga</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_hp">Nomor Hp</string>
+    <string name="nomor_whatsapp">Nomor Whatsapp</string>
+    <string name="klik_disini">KLIK DISINI</string>
+    <string name="ini_total_harga">Ini Total Harga</string>
+    <string name="untuk_menjumlahkan_harga">Untuk menjumlahkan harga</string>
+    <string name="edit_data">EDIT DATA</string>
+    <string name="nama_pemilik_hutang">Nama Pemilik Hutang</string>
+    <string name="total_hutang">TOTAL HUTANG : </string>
+    <string name="kirim">KIRIM</string>
+    <string name="judul_pesan">Judul Pesan</string>
+    <string name="ini_pesan">Ini Pesan</string>
+    <string name="isi_pesan">Isi Pesan</string>
+    <string name="pesan_tambahan">Pesan Tambahan</string>
+    <string name="hutang">HUTANG</string>
+    <string name="data">Data</string>
+    <string name="cari_berdasarkan_nama">Cari Berdasarkan Nama</string>
+</resources>
